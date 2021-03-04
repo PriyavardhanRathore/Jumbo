@@ -1,0 +1,469 @@
+/*
+Project: Jumbo
+Author: Priyavardhan_rathore
+1.Global
+2.Body
+2.1 header
+   2.1.1 top_navbar
+   2.1.2 navbar
+2.2 banner
+2.3 Infotext
+2.4 Our_services
+2.5 Our Organisation
+2.6 Testimonials
+2.7 Links
+2.8 Footer 3
+*/
+
+*{
+    box-sizing: border-box;
+}
+/*Global started*/
+ul{
+    list-style: none;
+    padding: 0px;
+}
+h5{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+/*Global Ended*/
+
+/*Body started*/
+body{
+    margin: 0px;
+}
+[data-border]{
+ border: solid red 1px;
+}
+/*Header started*/
+
+/*top_navbar started*/
+.top_navbar{
+    background-color: #428bca;
+    padding: 10px 0px;
+
+}
+.top_navbar .container{
+    display: flex;
+    margin:auto;
+    justify-content: space-between;
+    width: 75% ;
+    padding: 0px;
+
+}
+.top_navbar .container:before{
+    content: normal;
+    justify-content: space-between;
+}
+.top_navbar .container a{
+    color: white;
+    padding: 0px;
+    margin: 0px;
+
+}
+/*top_navbar Ended*/
+
+/*navbar started*/
+.navbar{
+    background-color: #05142B;
+    padding: 2px 0px;
+}
+.navbar .container{
+    display: flex;
+    margin:auto;
+    justify-content: space-between;
+    width: 75% ;
+    align-items: center;
+}
+.container ul{
+    display: flex;
+}
+.navbar .container > a{
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+.container ul a{
+    text-decoration: none;
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.container ul a:hover{
+    color: #428bca;
+}
+/*navbar Ended*/
+
+/*Header Ended*/
+
+/*Carousel started*/
+.Carousel{
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+}
+.Carousel .container{
+    display: flex;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.Carousel .container .carousel-inner{
+    position: relative;
+
+}
+.Carousel .container .carousel-inner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(46,142,218,0.8);
+}
+.carousel-caption{
+    margin: 0px 0px 150px 0px;
+    Z-INDEX: 9;
+}
+.carousel-caption h3{
+    font-size: 80px;
+    text-align: center;
+    color: white;
+}
+.carousel-caption p{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+/*Carousel Ended*/
+
+/*Infotext started*/
+.infotext{
+ background-color:#EFEFEF;
+ overflow: hidden;
+} 
+.infotext .container{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 75% ;
+    color: #05142B;
+    align-items: center;
+    padding: 70px 0px;
+
+}
+.infotext .container article{
+    width: 80%;
+
+}
+.infotext .container article h2{
+    font-size: 25px;
+    margin: 0px;
+
+}
+.infotext .container article p{
+    margin: 0px;
+    color: #777777;
+}
+
+.infotext .container button {
+
+    background-color:#2E8EDA;
+    color: white;
+    width: 110px;
+    height: 45px;
+    margin-top: 20px;
+    border: solid white 1px;  
+}
+/*Infotext Ended*/
+
+/*Our services started*/
+
+.our_services .container{
+ 
+    margin: auto;
+    width: 75% ;
+    padding: 30px 0px;
+}
+.our_services .container h2{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+.our_services .container p{
+    text-align: center;
+    color: #777777;
+}
+.our_services .container .Our_services_box{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    padding: 10px;
+}
+.Our_services_box .box{
+    display: flex;
+    text-align: left;
+    width: 32%;
+    margin-bottom: 25px;
+    align-items: center;
+}
+.Our_services_box .box h5{
+    text-align: left;
+    margin: 0px;
+}
+.Our_services_box .box p{
+    text-align: left;
+    margin: 5px 0px;
+    color: #777777;
+
+}
+.Our_services_box .box i{
+    background-color: #2E8EDA;
+    color: white;
+    padding: 20px;
+
+}
+.Our_services_box .box article{
+
+    margin: 10px 0px 0px 10px;
+
+}
+/*Our services Ended*/
+
+/*Our Organisation started*/
+.our_organization{
+    background-color:#EFEFEF;
+    padding: 40px 0;
+}
+
+.our_organization .container{
+    margin: auto;
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.our_organization .container h2{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+.our_organization .container p{
+    text-align: center;
+    width: 56%;
+    margin-left: 22%;
+    color: #777777;
+}
+.Our_organisation{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.container .Our_organisation article p{
+    text-align: left;
+    margin: 0px;
+    width: 100%;
+    padding: 10px;
+}
+.container .Our_organisation article ul{
+    text-align: left;
+    display: list-item;
+    padding: 10px;
+}
+.container .Our_organisation article ul li {
+    padding: 5px;
+}
+.container .Our_organisation article ul li a{
+    color: #777777;
+    text-transform: none;
+    padding: 10px;
+}
+.container .Our_organisation article ul li  i:before {
+    margin-left: 5px;
+ 
+}
+.container .Our_organisation article i{
+    background-color: #EFEFEF;
+    color: #314B92;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #314B92;
+    align-items: center;
+
+}
+.container .Our_organisation article button {
+
+    background-color:#2E8EDA;
+    color: white;
+    width: 110px;
+    height: 45px;
+    border: solid #2E8EDA 1px;  
+}
+.organisation_image{
+    background: url(../images/organisation_image.JPG) no-repeat;
+    background-size: contain;
+    width: 150%;
+}
+/*Our Organisation Ended*/
+
+/*Testimonials Started*/
+.testimonials{
+    overflow: hidden;
+}
+
+.testimonials .container{
+  
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 75% ;
+    padding: 50px 0px;
+}
+.testimonials .container .sections{
+    margin-top: 50px;
+    width: 31%;
+}
+.accordion {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    padding: 15px 0px 15px 20px;
+    border: 2px solid #F5F5F5;
+    text-align: left;
+    transition: 0.4s;
+    margin-bottom: 5px;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+.testimonials .container .sections .box{
+    background-color: #EFEFEF;
+    color: #767676;
+    position: relative;
+}
+.testimonials .container .sections .box p{
+font-size: 14px;
+}
+.testimonials .container .sections .box:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-width: 0 0 16px 16px ;
+    border-style: solid;
+    border-color: white #C5C5C5;
+  }
+  .testimonials .container .sections .box p{
+
+    padding:10px;
+  }
+.testimonials .container .sections .image_container{
+    display: flex;
+}
+.testimonials .container .sections .member_image {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+    padding: 1px;
+    border: 1px solid #EEEEEE;
+    border-radius: 50%;
+}
+.testimonials .container .sections .member_image .team_member {
+  display: inline;
+  margin: 0 auto;
+  margin-left: 0px; 
+  height: 100%;
+  width: auto;
+}
+.sections .last_section .image_container .member_title{
+    margin: 60px 0px 0px 20px;
+}
+.sections .last_section .image_container .member_title h1{
+    color: #3994DC;
+    font-size: 20px;
+    margin: 0px 0px 10px 0px;
+}
+
+/*Testimonials Ended*/
+
+/*Links Satrted*/
+.Links{
+    overflow: hidden;
+    background-color: #EFEFEF;
+}
+
+.Links .container{
+  
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 75% ;
+    height: 300px;
+}
+.Links .container .sections{
+    margin-top: 50px;
+    width: 24%;
+}
+.Links .container address{
+    margin-top: 50px;
+    width: 24%;
+}
+.Links .container .sections ul{
+    text-align: left;
+    display: list-item;
+    margin: 0px;
+    padding: 10px;
+}
+.Links .container .sections ul li{
+    margin: 0px 0px 10px -10px;
+}
+.Links .container .sections ul li a {
+    color:black;
+    text-transform: none;
+    
+}
+/*Links Ended*/
+
+/*Footer Satrted*/
+footer{
+    background-color: #111523;
+    color: white;
+    height: 100px;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 75%;
+}
+footer .container a{
+    margin: 50px 0px 0px 0px;
+}
+footer .container .icons
+{
+    margin: 50px 40px 0px 0px;
+}
+footer .container .icons i{
+
+    margin: 0px 10px 0px 0px;
+}
+/*Footer Ended*/
