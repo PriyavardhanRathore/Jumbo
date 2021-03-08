@@ -27,17 +27,21 @@ h5{
     font-size: 20px;
     font-weight: normal;
 }
+.container{
+    width: 75% ;
+    max-width: 1170px;
+    padding: 0px;
+}
 
-
-/*Global Ended*/
-
-/*Body started*/
 body{
     margin: 0px;
 }
 [data-border]{
  border: solid red 1px;
 }
+
+/*Global Ended*/
+
 /*Header started*/
 
 /*top_navbar started*/
@@ -46,19 +50,17 @@ body{
     padding: 10px 0px;
 
 }
-.top_navbar .container{
+.top_navbar_wrapper{
     display: flex;
+    flex-wrap: wrap;
     margin:auto;
     justify-content: space-between;
-    width: 75% ;
-    padding: 0px;
-
 }
-.top_navbar .container:before{
+.top_navbar .top_navbar_wrapper:before{
     content: normal;
     justify-content: space-between;
 }
-.top_navbar .container a{
+.top_navbar .top_navbar_wrapper a{
     color: white;
     padding: 0px;
     margin: 0px;
@@ -69,34 +71,37 @@ body{
 /*navbar started*/
 .navbar{
     background-color: #05142B;
-    padding: 2px 0px;
 }
 .navbar .container{
+ display: inline;
+}
+.navbar_wrapper{
     display: flex;
+    flex-wrap: wrap;
     margin:auto;
     justify-content: space-between;
-    width: 75% ;
-    align-items: center;
 }
-.container ul{
-    display: flex;
-}
-.navbar .container > a{
+.navbar_icon a{
     text-decoration: none;
-    padding: 10px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 25px;
     color: white;
 }
-.container ul a{
+.navbar_list ul{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+
+}
+.navbar_list ul a{
     text-decoration: none;
-    margin-right: 15px;
+    margin-right: 25px;
     text-transform: uppercase;
     color: white;
 }
 
-.container ul a:hover{
+.navbar_list ul a:hover{
     color: #428bca;
 }
 /*navbar Ended*/
@@ -109,17 +114,11 @@ body{
     padding: 0px;
     align-items: center;
 }
-.Carousel .container{
-    display: flex;
-    margin: 0px 0px;
-    padding: 0px 0px;
-}
-
-.Carousel .container .carousel-inner{
+.carousel-inner{
     position: relative;
 
 }
-.Carousel .container .carousel-inner::after{
+.carousel-inner::after{
     content: "";
     position: absolute;
     top: 0;
@@ -149,93 +148,91 @@ body{
  background-color:#EFEFEF;
  overflow: hidden;
 } 
-.infotext .container{
+.infotext_wrapper{
     display: flex;
-    margin: auto;
+    margin: 0;
     justify-content: space-between;
-    width: 75% ;
-    color: #05142B;
+    padding: 60px 0;
     align-items: center;
-    padding: 70px 0px;
 
 }
-.infotext .container article{
-    width: 80%;
-
+.infotext_wrapper article{
+ padding: 10px 20px 10px 0;
 }
-.infotext .container article h2{
+.infotext_wrapper article h2{
     font-size: 25px;
     margin: 0px;
+    padding: 0;
 
 }
-.infotext .container article p{
+.infotext_wrapper article p{
     margin: 0px;
+    padding: 0;
     color: #777777;
 }
 
-.infotext .container button {
+.infotext_wrapper button {
 
     background-color:#2E8EDA;
     color: white;
-    width: 110px;
+    width: 180px;
     height: 45px;
-    margin-top: 20px;
     border: solid white 1px;  
 }
 /*Infotext Ended*/
 
 /*Our services started*/
 
-.our_services .container{
- 
-    margin: auto;
-    width: 75% ;
+.our_services_wrapper{
+
     padding: 30px 0px;
 }
-.our_services .container h2{
+.our_services_wrapper h2{
     text-align: center;
     margin-top: 60px;
     font-size: 30px;
     margin-bottom: 0px;
 }
-.our_services .container p{
+.our_services_wrapper p{
     text-align: center;
     color: #777777;
 }
-.our_services .container .Our_services_box{
+.our_services_box{
     display: flex;
     justify-content: space-between;
     flex-flow: wrap;
-    padding: 10px;
+    padding: 10px 10px 0 0;
+
 }
-.Our_services_box .box{
+.box{
     display: flex;
     text-align: left;
-    width: 32%;
+    width: 33%;
     margin-bottom: 25px;
-    align-items: center;
 }
-.Our_services_box .box h5{
+.box article{
+    margin: 0;
+    padding: 10px 15px;
+}
+.box h5{
     text-align: left;
     margin: 0px;
 }
-.Our_services_box .box p{
+.box p{
     text-align: left;
+    font-size: 14px;
     margin: 5px 0px;
     color: #777777;
 
 }
-.Our_services_box .box i{
+.box i{
     background-color: #2E8EDA;
     color: white;
-    padding: 20px;
+    padding: 10px 20px;
+    margin: 18px 0px;
 
 }
-.Our_services_box .box article{
 
-    margin: 10px 0px 0px 10px;
-
-}
 /*Our services Ended*/
 
 /*Our Organisation started*/
@@ -244,53 +241,52 @@ body{
     padding: 40px 0;
 }
 
-.our_organization .container{
+.our_organization_wrapper{
     margin: auto;
-    max-width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 40px 0;
 }
-.our_organization .container h2{
+.our_organization_wrapper h2{
     text-align: center;
-    margin-top: 60px;
-    font-size: 30px;
-    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin: 0;
 }
-.our_organization .container p{
+.our_organization_wrapper p{
     text-align: center;
     width: 56%;
     margin-left: 22%;
     color: #777777;
 }
-.Our_organisation{
+.our_organisation{
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
-.container .Our_organisation article p{
+.our_organisation_content p{
     text-align: left;
     margin: 0px;
     width: 100%;
     padding: 10px;
 }
-.container .Our_organisation article ul{
+.our_organisation_content ul{
     text-align: left;
     display: list-item;
     padding: 10px;
 }
-.container .Our_organisation article ul li {
+.our_organisation_content ul li {
     padding: 5px;
 }
-.container .Our_organisation article ul li a{
+.our_organisation_content ul li a{
     color: #777777;
     text-transform: none;
+    text-decoration: none;
     padding: 10px;
 }
-.container .Our_organisation article ul li  i:before {
+.our_organisation_content ul li  i:before {
     margin-left: 5px;
  
 }
-.container .Our_organisation article i{
+.our_organisation_content i{
     background-color: #EFEFEF;
     color: #314B92;
     border-radius: 100%;
@@ -300,7 +296,7 @@ body{
     align-items: center;
 
 }
-.container .Our_organisation article button {
+.our_organisation_content button {
 
     background-color:#2E8EDA;
     color: white;
@@ -316,21 +312,67 @@ body{
 /*Our Organisation Ended*/
 
 /*Testimonials Started*/
-.testimonials{
-    overflow: hidden;
-}
-
-.testimonials .container{
-  
+.testimonials_wrapper{
     display: flex;
     justify-content: space-between;
     margin: auto;
-    width: 75% ;
     padding: 50px 0px;
 }
-.testimonials .container .sections{
+.sections{
     margin-top: 50px;
     width: 31%;
+}
+
+.last_section_box{
+    background-color: #EFEFEF;
+    color: #767676;
+    position: relative;
+}
+.last_section_box p{
+font-size: 14px;
+}
+.last_section_box:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-width: 0 0 16px 16px ;
+    border-style: solid;
+    border-color: white #C5C5C5;
+  }
+.last_section_box p{
+
+    padding:10px;
+  }
+.image_container{
+    display: flex;
+}
+.member_image {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    overflow: hidden;
+    padding: 1px;
+    border: 1px solid #EEEEEE;
+    border-radius: 50%;
+}
+.team_member {
+  display: inline;
+  margin: 0 auto;
+  margin-left: 0px; 
+  height: 100%;
+  width: auto;
+}
+.member_title{
+    margin: 60px 0px 0px 20px;
+}
+.member_title h1{
+    color: #3994DC;
+    font-size: 20px;
+    margin: 0px 0px 10px 0px;
 }
 .accordion {
     background-color: white;
@@ -344,101 +386,51 @@ body{
     margin-bottom: 5px;
   }
   
-  .panel {
+.panel{
     padding: 0 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
-.testimonials .container .sections .box{
-    background-color: #EFEFEF;
-    color: #767676;
-    position: relative;
-}
-.testimonials .container .sections .box p{
-font-size: 14px;
-}
-.testimonials .container .sections .box:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border-width: 0 0 16px 16px ;
-    border-style: solid;
-    border-color: white #C5C5C5;
-  }
-  .testimonials .container .sections .box p{
-
-    padding:10px;
-  }
-.testimonials .container .sections .image_container{
-    display: flex;
-}
-.testimonials .container .sections .member_image {
-    width: 100px;
-    height: 100px;
-    margin-top: 20px;
-    background-position: center;
-    background-size: contain;
-    position: relative;
-    overflow: hidden;
-    padding: 1px;
-    border: 1px solid #EEEEEE;
-    border-radius: 50%;
-}
-.testimonials .container .sections .member_image .team_member {
-  display: inline;
-  margin: 0 auto;
-  margin-left: 0px; 
-  height: 100%;
-  width: auto;
-}
-.sections .last_section .image_container .member_title{
-    margin: 60px 0px 0px 20px;
-}
-.sections .last_section .image_container .member_title h1{
-    color: #3994DC;
-    font-size: 20px;
-    margin: 0px 0px 10px 0px;
-}
 
 /*Testimonials Ended*/
 
 /*Links Satrted*/
-.Links{
-    overflow: hidden;
+.links{
     background-color: #EFEFEF;
 }
 
-.Links .container{
+.links_wrapper{
   
     display: flex;
     justify-content: space-between;
     margin: auto;
-    width: 75% ;
-    height: 300px;
 }
-.Links .container .sections{
-    margin-top: 50px;
+
+.links_wrapper .sections{
     width: 24%;
+    margin: 0;
+    padding: 50px 0;
 }
-.Links .container address{
-    margin-top: 50px;
+.links_wrapper address{
+    padding: 50px 0;
     width: 24%;
+    margin: 0;
 }
-.Links .container .sections ul{
+.links_wrapper .sections ul{
     text-align: left;
     display: list-item;
     margin: 0px;
     padding: 10px;
 }
-.Links .container .sections ul li{
+.links_wrapper .sections ul li{
     margin: 0px 0px 10px -10px;
 }
-.Links .container .sections ul li a {
+.links_wrapper .sections ul li a {
     color:black;
     text-transform: none;
+    text-decoration: none;
     
 }
 /*Links Ended*/
@@ -449,20 +441,19 @@ footer{
     color: white;
     height: 100px;
 }
-footer .container {
+.footer_wrapper{
     display: flex;
     justify-content: space-between;
     margin: auto;
-    width: 75%;
 }
-footer .container a{
+.footer_wrapper a{
     margin: 50px 0px 0px 0px;
 }
-footer .container .icons
+.icons
 {
     margin: 50px 40px 0px 0px;
 }
-footer .container .icons i{
+.icons i{
 
     margin: 0px 10px 0px 0px;
 }
