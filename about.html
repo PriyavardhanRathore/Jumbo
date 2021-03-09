@@ -128,13 +128,13 @@
                 <div class="sections">
                     <h5>Our Expertise</h5>
                     <label>Web Development</label><br>
-                    <progress id="file_1" value="40" max="100"> 40% </progress><br>
+                    <progress value="40" max="100"> 40% </progress><br>
                     <label>Designing</label><br>
-                    <progress id="file" value="60" max="100"> 60% </progress><br>
+                    <progress value="60" max="100"> 60% </progress><br>
                     <label>User Experience</label><br>
-                    <progress id="file" value="70" max="100"> 70% </progress><br>
+                    <progress value="70" max="100"> 70% </progress><br>
                     <label>Development</label><br>
-                    <progress id="file" value="30" max="100"> 30% </progress><br>
+                    <progress value="30" max="100"> 30% </progress><br>
                 </div>
             </div>
         </div>
@@ -147,7 +147,7 @@
                 <h5>Our Team</h5>
             </div>
             <div class="our_team_wrapper">
-                <div class="team_member_container" >
+                <div class="team_member_container">
                     <div class="team_members">
                         <img src="./images/team1.jpg" alt="team_member_1" height="260px">
                     </div>
@@ -274,22 +274,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
         integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
     </script>
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

@@ -142,6 +142,16 @@ body{
     width:100%;
     height:10px;
 }
+
+.sections progress[value]::-webkit-progress-bar {
+    background: yellow;
+    border-radius: 7px;
+  }
+.sections progress::-webkit-progress-value {
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px 3px rgba( 255, 0, 0, 0.8 );
+  }
+
 .accordion {
     background-color: white;
     color: #444;
@@ -161,7 +171,7 @@ body{
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
-  
+
 /*description Ended*/
 
 /*our_team Started*/
